@@ -1,38 +1,223 @@
-.App {
-  text-align: center;
-}
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+/* App */
+.App{
   display: flex;
   flex-direction: column;
   align-items: center;
+  
+}
+/* header */
+.header{
+  margin: 0.25%;
+  width: 99.5%;
+  min-height: 50px;
+  background: rgb(173, 220, 238);
+  border-radius: 3px;
+  display: flex;
+  align-items: center;
+  
+  color: black;
+}
+
+.profile{
+  width: 45%;
+  height:48px;
+  display: flex;
+  justify-content: flex-end;
+  align-items:center;
+}
+.profile img{
+  height: 80%;
+  width: fit-content;
+  padding-right:5%;
+
+}
+.nav{
+  height: inherit;
+  width: 65%;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+.nav button{
+  margin-right: 2%;
+  width: fit-content;
+  background-color: inherit;
+  border: hidden;
+  font-size: medium;
+}
+.nav img{
+ 
+ height: 48px;
+  margin-right: 5%;
+  margin-top: 1%;
+ width: fit-content;
+  margin-left: 2%;
+}
+.navlink {
+  text-decoration:none;
+  color: #000;
+  font-style: inherit;
+}
+.compo{
+  
+  width: 98%;
+  height: 80vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+ 
+}
+
+
+
+
+/* form */
+.form{
+  margin-top: 2%;
+  width: 80%;
+
+}
+.inp{
+  padding: 1%;
+  width: 100%;
+  height: 25px;
+  display: flex;
+  margin: 1%;
+}
+.lab{
+  width: 40%;
+  height: 100%;
+}
+.inpu{
+ width: 60%;
+ height: 100%;
+ display: flex;
+ align-items: center;
+ justify-content: space-between;
+}
+.heading{
+  font-size: large;
+  display: flex;
+  flex-direction: column;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  height: 32px;
+  width:100%;
+  padding-left: 1%;
+  background-color: rgb(242, 242, 121);
+  border-radius: 3px;
+}
+.inp button{
+  width: 60%;
+  border-radius: 3px;
+  border: 1px solid gray;
+  
+  background-color: rgb(185, 249, 121);
 }
 
-.App-link {
-  color: #61dafb;
+
+
+
+/* table */
+
+
+.Table{
+  width: 100%;
+  margin-top: 0.5%;
+}
+.but{
+  width: 70%;
+  height: 90%;
+  border-radius: 2px;
+  border: 1px solid gray;
+  background-color: rgb(185, 249, 121);
+}
+.search{
+  width:80%;
+  border-radius: 2px;
+  height: 80%;
+  border: 1px solid gray;
+}
+.top{
+  width:50%;
+  display: flex;
+  justify-content:space-between;
+  height: 100%;
+  align-items: center;
+}
+.prefix{
+  font-size: medium;
+  width: 20%;
+  text-wrap: nowrap;
+  
+}
+.Thead{
+  width: 99%;
+  border-radius: 3px;
+  padding: 0.5%;
+}
+.TfirRow{
+
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  height: 24px;
+}
+.TsecRow{
+  background: rgb(115, 186, 214);
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  height: 24px;
+}
+table{
+ background-color:rgb(202, 188, 188);
+}
+.th{
+ 
+  background: rgb(115, 186, 214);
+ 
+}
+.TthRow{
+  font-size: small;
+  width: 100%;
+  
+}
+.ltcont{
+  z-index: 10;
+  background-color: aliceblue;
+  padding: 1% 0%;
+}
+.rtcont{
+  text-align: right;
+  z-index: 10;
+  background-color: aliceblue;
+  padding: 1% 0%;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+/* AddEmployee */
+.empbody{
+  width: 100%;
+  display: flex;
+}
+.info{
+  width: 40%;
+  min-height: 75vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: stretch;
+}
+.blank{
+  width: 60%;
+}
+input[type="file"]{
+  
+  color: transparent;
+}
+[type="file"]::file-selector-button {
+  width: 100%;
+ height: 95%;
+  cursor: pointer;
 }
